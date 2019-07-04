@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Employee Wizard</title>
+        <!-- use the relative paths  -->
+        <script data-main="../main"
+                src="../../../jet/libs/require/require.js"
+        type="text/javascript"></script>
+        <link href="../../../jet/libs/css/libs/oj/v6.0.0/alta/oj-alta-min.css"
+              rel="stylesheet" type="text/css"/>
+        <link href="../../css/employeeWizard.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="wizard">
+            <div id="train-container"
+                 style="background-color: whitesmoke;padding-top: 5px">
+                <h1 style="padding-left: 5px">
+                    <oj-bind-text value="[[wizardTitle]]"></oj-bind-text>
+                </h1>
+                <pre style="font-family: sans-serif">     Follow the steps below to enter the Employee Details.</pre>
+                <div class="train-row">
+                    <oj-train id="train" class="oj-train-stretch"
+                              steps="[[stepArray]]"
+                              selected-step="{{currentStepValue}}"                     
+                              style="max-width:700px;min-width:240px;margin-left:auto;margin-right:auto;">
+                    </oj-train>
+                    <div class="train-right">  
+                        <span role="separator" aria-orientation="vertical"
+                              class="oj-toolbar-separator" style="padding-left :2px"></span>
+
+                        <oj-button class="topRight-button" on-click="[[cancel]]">Cancel</oj-button>
+
+                        <oj-button class="topRight-button"
+                                   id="prevBtn"  style="margin-right: 1px;margin-left: 1px"
+                                   on-click="[[previousStep]]"
+                                   disabled="true">Previous</oj-button>
+
+                        <oj-button class="topRight-button"
+                                   id="nextBtn" style="margin-right: 1px;margin-left: 1px"
+                                   on-click="[[nextStep]]">Next</oj-button>
+
+                        <oj-button class="topRight-button" disabled="true"  id= "finishBtn" 
+                                   style="margin-right: 3px;margin-left: 1px" on-click="[[finish]]">Finish</oj-button>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <!-- main wizard content  -->
+            <div data-bind="ojModule: router.moduleConfig"></div>     
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Review</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="font-family: cursive; color:lightcoral"><strong> Employee Summary</strong></h1>
+        <div style= "margin-left:20px;">          
+            <h3 style="font-family: cursive; color:lightcoral"><strong>Personnel Details Summary</strong></h3>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <oj-label for="compID">
+                        <span id="cubeSelId" style="font-family: cursive; color:blue">
+                            <oj-bind-text value="Name: "></oj-bind-text></span>
+
+                    </oj-label>
+                    </oj-label>
+                </div>
+                <div class="oj-flex-item" style="margin-left: -70%">
+                    <oj-label id="nameID">
+                        <span style="font-family: cursive; color:blue">
+                            <oj-bind-text value="[[name]]"></oj-bind-text></span>
+
+                    </oj-label> 
+                </div>
+            </div>
+            <br/>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <oj-label for="desigID">
+                        <span id="cubeSelId" style="font-family: cursive; color:blue">
+                            <oj-bind-text value="Mobile Number: "></oj-bind-text></span>
+
+                    </oj-label>
+                    </oj-label>
+                </div>
+                <div class="oj-flex-item" style="margin-left: -70%">
+                    <oj-label id="desigID">
+                        <span style="font-family: cursive; color:blue">
+                            <oj-bind-text value="[[mobile]]"></oj-bind-text></span>
+
+                    </oj-label> 
+                </div>
+            </div>  
+            <br/>
+            <br/>
+
+            <h3 style="font-family: cursive; color:lightcoral"><strong>Employment Details Summary</strong></h3>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <oj-label for="compID">
+                        <span id="cubeSelId" style="font-family: cursive; color:blue">
+                            <oj-bind-text value="Company: "></oj-bind-text></span>
+
+                    </oj-label>
+                    </oj-label>
+                </div>
+                <div class="oj-flex-item" style="margin-left: -70%">
+                    <oj-label id="compID">
+                        <span style="font-family: cursive; color:blue">
+                            <oj-bind-text value="[[company]]"></oj-bind-text></span>
+
+                    </oj-label> 
+                </div>
+            </div>
+            <br/>
+
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <oj-label for="desigID">
+                        <span id="cubeSelId" style="font-family: cursive; color:blue">
+                            <oj-bind-text value="Designation: "></oj-bind-text></span>
+
+                    </oj-label>
+                    </oj-label>
+                </div>
+                <div class="oj-flex-item" style="margin-left: -70%">
+                    <oj-label id="desigID">
+                        <span style="font-family: cursive; color:blue">
+                            <oj-bind-text value="[[designation]]"></oj-bind-text></span>
+
+                    </oj-label> 
+                </div>
+            </div>
+
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,58 @@
+.train-row
+{
+  margin: 0px auto 10px;
+  position: relative;
+  width: 100%;
+}
+
+.train-right
+{
+  position: absolute;
+  right: 0px;
+  bottom: 160%;
+}
+
+.train-middle
+{
+  margin: 0px auto;
+}
+
+.next-button
+{
+  float: right;
+  margin-left: 7px;
+}
+
+.finish-button-cont
+{
+  position: relative;
+  float: right;
+}
+
+.finish-button-cont img
+{
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  height: 52px;
+  width: 155px;
+}
+
+
+.oj-button.oj-hover.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-default.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-focus-only.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-hover.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-active.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-selected.oj-button-full-chrome .oj-button-button,
+.oj-button.oj-selected.oj-hover.oj-button-full-chrome .oj-button-button {
+    color: #ffffff !important;
+    background-color: #c35100 !important;
+    border-radius: 5px !important;
+    border: 1px solid #a44400 !important;
+    cursor: pointer !important;
+    font-weight: normal !important;
+    background-image: linear-gradient(to bottom, #c35100 0%, #a44400 100%) !important;
+    background-image: -moz-linear-gradient(top, #c35100, #a44400) !important;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .25) !important;
+}
